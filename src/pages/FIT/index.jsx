@@ -66,6 +66,40 @@ export default FIT;
 
 const Content = () => {
 
+
+    const [sortingColumn, setSortingColumn] = useState({ sortingField: "employee" });
+    const [sortingDescending, setSortingDescending] = useState(false);
+    
+    // Add sorting function
+    const handleSorting = ({ detail }) => {
+        setSortingColumn(detail.sortingColumn);
+        setSortingDescending(detail.sortingDescending);
+    };
+
+    // Create sorted items
+    const getSortedItems = (items) => {
+        if (!sortingColumn) return items;
+        
+        const { sortingField } = sortingColumn;
+        
+        return [...items].sort((a, b) => {
+            const aValue = a[sortingField] || '';
+            const bValue = b[sortingField] || '';
+            
+            if (sortingField === 'revenue') {
+                // Handle numeric sorting for revenue
+                const aNum = parseFloat(aValue) || 0;
+                const bNum = parseFloat(bValue) || 0;
+                return sortingDescending ? bNum - aNum : aNum - bNum;
+            }
+            
+            // Handle string sorting for other fields
+            if (aValue < bValue) return sortingDescending ? 1 : -1;
+            if (aValue > bValue) return sortingDescending ? -1 : 1;
+            return 0;
+        });
+    };
+
     useEffect(() => {               // On page load, call the API to get table data
         getData2()
     }, [])
@@ -92,24 +126,33 @@ const Content = () => {
         return API.get(apiName, path, myInit);
     }
 
-    function putData(event) {                   // Function to post new data to the database - calls API referenced in config.js
-        const apiName = 'fitAPI';
-        const path = '/fit';
-        const myInit = {
-            body: {
-                id: ''+(data.length + 1),
-                employee: employee,
-                date: date,
-                revenue: revenue
-            }
-        };
-        setNotes("")                        // Reset the form values to blank after submission
-        setDate("")
-        setTitle("")
-        getData2();
-
-        return API.post(apiName, path, myInit);
-        window.location.reload();
+    async function putData(event) {
+        try {
+            const apiName = 'fitAPI';
+            const path = '/fit';
+            const myInit = {
+                body: {
+                    id: ''+(data.length + 1),
+                    employee: employee,
+                    date: date,
+                    revenue: revenue
+                }
+            };
+            
+            // Wait for the post to complete
+            await API.post(apiName, path, myInit);
+            
+            // Clear form values
+            setNotes("");
+            setDate("");
+            setTitle("");
+            
+            // Fetch fresh data
+            await getData2();
+            
+        } catch (err) {
+            console.error("Error posting data:", err);
+        }
     }
 
 
@@ -203,86 +246,50 @@ const Content = () => {
             </div>
             {/* Start table section */}
             <div className='fitTable'>
-
                 <Table
                     columnDefinitions={[
-                        // {
-                        //     id: "id",
-                        //     header: "Transaction Number",
-                        //     cell: item => item.id || "-",
-                        //     sortingField: "name",
-                        //     isRowHeader: true
-                        // },
                         {
                             id: "Engineer",
                             header: "Sales Person",
                             cell: item => (
                                 <Box float="center">{item.employee || "-"}</Box>
                             ),
-                            sortingField: "type"
+                            sortingField: "employee"  // Add this field
                         },
                         {
                             id: "date",
                             header: "Date",
-                            cell: item => item.date || "-"
+                            cell: item => item.date || "-",
+                            sortingField: "date"  // Add this field
                         },
                         {
                             id: "notes",
                             header: "Revenue",
-                            cell: item => item.revenue || "-"
+                            cell: item => {
+                                if (!item.revenue) return "-";
+                                return new Intl.NumberFormat('en-US', {
+                                    style: 'currency',
+                                    currency: 'USD'
+                                }).format(parseFloat(item.revenue));
+                            },
+                            sortingField: "revenue"  // Add this field
                         }
                     ]}
-                    items={data.map((item, index) => (
-                        {
-                            employee: item.employee,
-                            date: item.date,
-                            revenue: item.revenue,
-                            approved: item.approved,
-                            id: item.id
-                        }
-                    ))}
-
-                    loadingText="Loading resources"
-                    selectedItems={[{ name: "Item 2" }]}
-                    empty={
-                        <Box textAlign="center" color="inherit">
-                            <b>No resources</b>
-                            <Box
-                                padding={{ bottom: "s" }}
-                                variant="p"
-                                color="inherit"
-                            >
-                                No resources to display.
-                            </Box>
-                            <Button>Create resource</Button>
-                        </Box>
-                    }
-                    filter={
-                        <TextFilter
-                            filteringAriaLabel="Filter distributions"
-                            filteringPlaceholder="Find tests"
-                            filteringClearAriaLabel="Clear"
-
-                        />
-                    }
-                    header={
-                        <Header>Test History</Header>
-                    }
-                    pagination={
-                        <Pagination
-                            currentPageIndex={1}
-                            pagesCount={1}
-                            ariaLabels={{
-                                nextPageLabel: "Next page",
-                                previousPageLabel: "Previous page",
-                                pageLabel: pageNumber =>
-                                    `Page ${pageNumber} of all pages`
-                            }}
-                        />
-                    }
+                    items={getSortedItems(data.map((item, index) => ({
+                        employee: item.employee,
+                        date: item.date,
+                        revenue: item.revenue,
+                        approved: item.approved,
+                        id: item.id
+                    })))}
+                    sortingColumn={sortingColumn}
+                    sortingDescending={sortingDescending}
+                    onSortingChange={handleSorting}
+                    // ... rest of your table props ...
                 />
             </div>
         </div>
+        
     );
 };
 export const ToolsContent = () => (
