@@ -1,0 +1,7 @@
+
+/* This is to overwrite the withAuthenticator login UI and allow the AD to log straight in */
+
+[data-amplify-authenticator] {        
+    display: none;
+    display: inline;
+  }

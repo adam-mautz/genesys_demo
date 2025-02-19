@@ -1,0 +1,43 @@
+
+    // es-module interop with Babel and Typescript
+    Object.defineProperty(exports, "__esModule", { value: true });
+    module.exports.default = {
+  "card-inner": "awsui_card-inner_p8a6i_qfyit_97",
+  "root": "awsui_root_p8a6i_qfyit_133",
+  "header-variant-full-page": "awsui_header-variant-full-page_p8a6i_qfyit_153",
+  "header-refresh": "awsui_header-refresh_p8a6i_qfyit_153",
+  "list": "awsui_list_p8a6i_qfyit_196",
+  "list-grid-1": "awsui_list-grid-1_p8a6i_qfyit_204",
+  "card": "awsui_card_p8a6i_qfyit_97",
+  "list-grid-2": "awsui_list-grid-2_p8a6i_qfyit_207",
+  "list-grid-3": "awsui_list-grid-3_p8a6i_qfyit_210",
+  "list-grid-4": "awsui_list-grid-4_p8a6i_qfyit_213",
+  "list-grid-5": "awsui_list-grid-5_p8a6i_qfyit_216",
+  "list-grid-6": "awsui_list-grid-6_p8a6i_qfyit_219",
+  "list-grid-7": "awsui_list-grid-7_p8a6i_qfyit_222",
+  "list-grid-8": "awsui_list-grid-8_p8a6i_qfyit_225",
+  "list-grid-9": "awsui_list-grid-9_p8a6i_qfyit_228",
+  "list-grid-10": "awsui_list-grid-10_p8a6i_qfyit_231",
+  "list-grid-11": "awsui_list-grid-11_p8a6i_qfyit_234",
+  "list-grid-12": "awsui_list-grid-12_p8a6i_qfyit_237",
+  "list-grid-13": "awsui_list-grid-13_p8a6i_qfyit_240",
+  "list-grid-14": "awsui_list-grid-14_p8a6i_qfyit_243",
+  "list-grid-15": "awsui_list-grid-15_p8a6i_qfyit_246",
+  "list-grid-16": "awsui_list-grid-16_p8a6i_qfyit_249",
+  "list-grid-17": "awsui_list-grid-17_p8a6i_qfyit_252",
+  "list-grid-18": "awsui_list-grid-18_p8a6i_qfyit_255",
+  "list-grid-19": "awsui_list-grid-19_p8a6i_qfyit_258",
+  "list-grid-20": "awsui_list-grid-20_p8a6i_qfyit_261",
+  "selection-control": "awsui_selection-control_p8a6i_qfyit_265",
+  "loading": "awsui_loading_p8a6i_qfyit_274",
+  "empty": "awsui_empty_p8a6i_qfyit_275",
+  "has-header": "awsui_has-header_p8a6i_qfyit_282",
+  "card-header": "awsui_card-header_p8a6i_qfyit_343",
+  "card-header-inner": "awsui_card-header-inner_p8a6i_qfyit_351",
+  "card-selectable": "awsui_card-selectable_p8a6i_qfyit_355",
+  "card-selected": "awsui_card-selected_p8a6i_qfyit_358",
+  "section": "awsui_section_p8a6i_qfyit_365",
+  "section-header": "awsui_section-header_p8a6i_qfyit_371",
+  "section-content": "awsui_section-content_p8a6i_qfyit_377"
+};
+  

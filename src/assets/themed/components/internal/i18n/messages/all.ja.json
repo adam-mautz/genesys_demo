@@ -1,0 +1,175 @@
+{
+  "@cloudscape-design/components": {
+    "ja": {
+      "alert": { "dismissAriaLabel": [{ "type": 0, "value": "アラートを閉じる" }] },
+      "app-layout": {
+        "ariaLabels.navigation": [{ "type": 0, "value": "サイドナビゲーション" }],
+        "ariaLabels.navigationClose": [{ "type": 0, "value": "サイドナビゲーションを閉じる" }],
+        "ariaLabels.navigationToggle": [{ "type": 0, "value": "サイドナビゲーションを開く" }],
+        "ariaLabels.notifications": [{ "type": 0, "value": "通知" }],
+        "ariaLabels.tools": [{ "type": 0, "value": "ヘルプパネル" }],
+        "ariaLabels.toolsClose": [{ "type": 0, "value": "ヘルプパネルを開く" }],
+        "ariaLabels.toolsToggle": [{ "type": 0, "value": "ヘルプパネルを閉じる" }]
+      },
+      "autosuggest": {
+        "errorIconAriaLabel": [{ "type": 0, "value": "エラー" }],
+        "selectedAriaLabel": [{ "type": 0, "value": "選択済み" }]
+      },
+      "calendar": {
+        "nextMonthAriaLabel": [{ "type": 0, "value": "来月" }],
+        "previousMonthAriaLabel": [{ "type": 0, "value": "前月" }],
+        "todayAriaLabel": [{ "type": 0, "value": "今日" }]
+      },
+      "flashbar": {
+        "i18nStrings.ariaLabel": [{ "type": 0, "value": "通知" }],
+        "i18nStrings.errorIconAriaLabel": [{ "type": 0, "value": "エラー" }],
+        "i18nStrings.inProgressIconAriaLabel": [{ "type": 0, "value": "進行中" }],
+        "i18nStrings.infoIconAriaLabel": [{ "type": 0, "value": "情報" }],
+        "i18nStrings.notificationBarAriaLabel": [{ "type": 0, "value": "すべての通知" }],
+        "i18nStrings.notificationBarText": [{ "type": 0, "value": "通知" }],
+        "i18nStrings.successIconAriaLabel": [{ "type": 0, "value": "成功" }],
+        "i18nStrings.warningIconAriaLabel": [{ "type": 0, "value": "警告" }]
+      },
+      "form-field": { "i18nStrings.errorIconAriaLabel": [{ "type": 0, "value": "エラー" }] },
+      "form": { "errorIconAriaLabel": [{ "type": 0, "value": "エラー" }] },
+      "input": { "clearAriaLabel": [{ "type": 0, "value": "クリア" }] },
+      "modal": { "closeAriaLabel": [{ "type": 0, "value": "モーダルを閉じる" }] },
+      "pagination": {
+        "ariaLabels.nextPageLabel": [{ "type": 0, "value": "次のページ" }],
+        "ariaLabels.pageLabel": [
+          { "type": 0, "value": "全ページ中 " },
+          { "type": 1, "value": "pageNumber" },
+          { "type": 0, "value": " ページ" }
+        ],
+        "ariaLabels.previousPageLabel": [{ "type": 0, "value": "前のページ" }]
+      },
+      "popover": { "dismissAriaLabel": [{ "type": 0, "value": "ポップオーバーを閉じる" }] },
+      "property-filter": {
+        "i18nStrings.allPropertiesLabel": [{ "type": 0, "value": "すべてのプロパティ" }],
+        "i18nStrings.applyActionText": [{ "type": 0, "value": "適用" }],
+        "i18nStrings.cancelActionText": [{ "type": 0, "value": "キャンセル" }],
+        "i18nStrings.clearFiltersText": [{ "type": 0, "value": "フィルターをクリア" }],
+        "i18nStrings.editTokenHeader": [{ "type": 0, "value": "フィルターを編集" }],
+        "i18nStrings.groupPropertiesText": [{ "type": 0, "value": "プロパティ" }],
+        "i18nStrings.groupValuesText": [{ "type": 0, "value": "値" }],
+        "i18nStrings.operationAndText": [{ "type": 0, "value": "および" }],
+        "i18nStrings.operationOrText": [{ "type": 0, "value": "または" }],
+        "i18nStrings.operatorContainsText": [{ "type": 0, "value": "次を含む:" }],
+        "i18nStrings.operatorDoesNotContainText": [{ "type": 0, "value": "次を含まない:" }],
+        "i18nStrings.operatorDoesNotEqualText": [{ "type": 0, "value": "次と等しくない:" }],
+        "i18nStrings.operatorEqualsText": [{ "type": 0, "value": "次と等しい:" }],
+        "i18nStrings.operatorGreaterOrEqualText": [{ "type": 0, "value": "次以上:" }],
+        "i18nStrings.operatorGreaterText": [{ "type": 0, "value": "次より大きい:" }],
+        "i18nStrings.operatorLessOrEqualText": [{ "type": 0, "value": "次以下:" }],
+        "i18nStrings.operatorLessText": [{ "type": 0, "value": "次未満:" }],
+        "i18nStrings.operatorText": [{ "type": 0, "value": "演算子" }],
+        "i18nStrings.operatorsText": [{ "type": 0, "value": "演算子" }],
+        "i18nStrings.propertyText": [{ "type": 0, "value": "プロパティ" }],
+        "i18nStrings.tokenLimitShowFewer": [{ "type": 0, "value": "少なく表示" }],
+        "i18nStrings.tokenLimitShowMore": [{ "type": 0, "value": "さらに表示" }],
+        "i18nStrings.valueText": [{ "type": 0, "value": "値" }],
+        "i18nStrings.removeTokenButtonAriaLabel": [
+          {
+            "type": 5,
+            "value": "token__operator",
+            "options": {
+              "equals": {
+                "value": [
+                  { "type": 0, "value": "フィルターを削除、" },
+                  { "type": 1, "value": "token__propertyKey" },
+                  { "type": 0, "value": " は " },
+                  { "type": 1, "value": "token__value" },
+                  { "type": 0, "value": " と等しい" }
+                ]
+              },
+              "not_equals": {
+                "value": [
+                  { "type": 0, "value": "フィルターを削除、" },
+                  { "type": 1, "value": "token__propertyKey" },
+                  { "type": 0, "value": " は " },
+                  { "type": 1, "value": "token__value" },
+                  { "type": 0, "value": " と等しくない" }
+                ]
+              },
+              "greater_than": {
+                "value": [
+                  { "type": 0, "value": "フィルターを削除、" },
+                  { "type": 1, "value": "token__propertyKey" },
+                  { "type": 0, "value": " は " },
+                  { "type": 1, "value": "token__value" },
+                  { "type": 0, "value": " より大きい" }
+                ]
+              },
+              "greater_than_equal": {
+                "value": [
+                  { "type": 0, "value": "フィルターを削除、" },
+                  { "type": 1, "value": "token__propertyKey" },
+                  { "type": 0, "value": " は " },
+                  { "type": 1, "value": "token__value" },
+                  { "type": 0, "value": " 以上" }
+                ]
+              },
+              "less_than": {
+                "value": [
+                  { "type": 0, "value": "フィルターを削除、" },
+                  { "type": 1, "value": "token__propertyKey" },
+                  { "type": 0, "value": " は " },
+                  { "type": 1, "value": "token__value" },
+                  { "type": 0, "value": " 未満" }
+                ]
+              },
+              "less_than_equal": {
+                "value": [
+                  { "type": 0, "value": "フィルターを削除、" },
+                  { "type": 1, "value": "token__propertyKey" },
+                  { "type": 0, "value": " は " },
+                  { "type": 1, "value": "token__value" },
+                  { "type": 0, "value": " 以下" }
+                ]
+              },
+              "contains": {
+                "value": [
+                  { "type": 0, "value": "フィルターを削除、" },
+                  { "type": 1, "value": "token__propertyKey" },
+                  { "type": 0, "value": " は " },
+                  { "type": 1, "value": "token__value" },
+                  { "type": 0, "value": " を含む" }
+                ]
+              },
+              "not_contains": {
+                "value": [
+                  { "type": 0, "value": "フィルターを削除、" },
+                  { "type": 1, "value": "token__propertyKey" },
+                  { "type": 0, "value": " は " },
+                  { "type": 1, "value": "token__value" },
+                  { "type": 0, "value": " を含まない" }
+                ]
+              },
+              "other": { "value": [] }
+            }
+          }
+        ]
+      },
+      "select": {
+        "errorIconAriaLabel": [{ "type": 0, "value": "エラー" }],
+        "selectedAriaLabel": [{ "type": 0, "value": "選択済み" }]
+      },
+      "wizard": {
+        "i18nStrings.stepNumberLabel": [
+          { "type": 0, "value": "ステップ " },
+          { "type": 1, "value": "stepNumber" }
+        ],
+        "i18nStrings.collapsedStepsLabel": [
+          { "type": 0, "value": "ステップ " },
+          { "type": 1, "value": "stepNumber" },
+          { "type": 0, "value": "/" },
+          { "type": 1, "value": "stepsCount" }
+        ],
+        "i18nStrings.cancelButton": [{ "type": 0, "value": "キャンセル" }],
+        "i18nStrings.previousButton": [{ "type": 0, "value": "戻る" }],
+        "i18nStrings.nextButton": [{ "type": 0, "value": "次へ" }],
+        "i18nStrings.optional": [{ "type": 0, "value": "オプション" }]
+      }
+    }
+  }
+}

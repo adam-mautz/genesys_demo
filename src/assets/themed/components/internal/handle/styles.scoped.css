@@ -1,0 +1,125 @@
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/* stylelint-disable @cloudscape-design/no-motion-outside-of-mixin, selector-combinator-disallowed-list, selector-pseudo-class-no-unknown, selector-class-pattern */
+/* stylelint-enable @cloudscape-design/no-motion-outside-of-mixin, selector-combinator-disallowed-list, selector-pseudo-class-no-unknown, selector-class-pattern */
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/* Style used for links in slots/components that are text heavy, to help links stand out among 
+surrounding text. (WCAG F73) https://www.w3.org/WAI/WCAG21/Techniques/failures/F73#description */
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+*/
+.awsui_handle_cc1pu_14d92_93:not(#\9) {
+  -webkit-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: none;
+  padding: 0 var(--space-scaled-xxxs-lo883m, 2px);
+  margin: 0 var(--space-scaled-xxs-95dhkm, 4px);
+  color: var(--color-text-interactive-default-eg5fsa, #414d5c);
+}
+.awsui_handle_cc1pu_14d92_93:not(#\9):hover {
+  color: var(--color-text-interactive-hover-239dxl, #3e3e3e);
+}
+body[data-awsui-focus-visible=true] .awsui_handle_cc1pu_14d92_93:not(#\9):focus:not(.awsui_hide-focus_cc1pu_14d92_104) {
+  position: relative;
+}
+body[data-awsui-focus-visible=true] .awsui_handle_cc1pu_14d92_93:not(#\9):focus:not(.awsui_hide-focus_cc1pu_14d92_104) {
+  outline: 2px dotted transparent;
+  outline-offset: calc(0px - 1px);
+}
+body[data-awsui-focus-visible=true] .awsui_handle_cc1pu_14d92_93:not(#\9):focus:not(.awsui_hide-focus_cc1pu_14d92_104)::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: calc(-1 * 0px);
+  top: calc(-1 * 0px);
+  width: calc(100% + 2 * 0px);
+  height: calc(100% + 2 * 0px);
+  border-radius: var(--border-radius-control-default-focus-ring-7661kz, 4px);
+  box-shadow: 0 0 0 2px var(--color-border-item-focused-397lya, #3081ED);
+}
+body[data-awsui-focus-visible=true] .awsui_handle_cc1pu_14d92_93:not(#\9):focus.awsui_hide-focus_cc1pu_14d92_104 {
+  outline: none;
+}
