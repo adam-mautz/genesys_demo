@@ -29,7 +29,7 @@ import { ExternalLinkItem } from '../../common/common-components-config';
 
 
 // Import images
-import awsLogo from '../../public/images/Bloom_Logo.png';
+import awsLogo from '../../public/images/bloom.svg';
 
 const Home = () => {
   return (
@@ -57,7 +57,7 @@ const Content = () => {
               <img
                   src={awsLogo}
                   alt=""
-                  style={{ maxWidth: '18rem', paddingRight: '2em', backgroundColor: 'white', borderTopRightRadius: '20px', borderBottomLeftRadius: '5px', outline:'#3081ED 1px solid' }}
+                  style={{ maxWidth: '18rem', paddingRight: '2em', backgroundColor: 'white', borderTopRightRadius: '20px', borderBottomLeftRadius: '5px', outline:'#3dae2b 1px solid' }}
                 />
                 <Box margin={{ bottom: 's' }} />
                 <div className="custom-home__header-title">
@@ -79,11 +79,11 @@ const Content = () => {
                 <Container header={<Header>App Navigation</Header>}>
                   <div>
                     <ul>
-                    <li><b><Link to="/Getting-started">About the Framework</Link></b> - Learn about the purpose of the App Framework and its underlying technologies.</li> 
+                    <li><b><Link to="/Getting-started">Live Dashboard</Link></b> - View the dashboard we worked on earlier, embedded in this website.</li> 
                     <br/>
-                    <li><b><Link to="/fit">Work with Data</Link></b> - Play around with a pre-built form and table connected to backend AWS resources</li> 
+                    <li><b><Link to="/fit">Working with APIs</Link></b> - Play around with a pre-built form and table connected to backend AWS resources like API Gateway, Lambda, and DynamoDB</li> 
                     <br/>
-                    <li><b><Link to="/enablement">Build your Own!</Link></b> - Use the blank canvas to start playing around with React and testing out your designs!</li> 
+        
                     </ul>
                   </div>
                 </Container>
