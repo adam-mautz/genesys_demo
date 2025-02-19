@@ -62,10 +62,10 @@ const Content = () => {
                 <Box margin={{ bottom: 's' }} />
                 <div className="custom-home__header-title">
                   <Box fontSize="display-l" fontWeight="bold" color="inherit">
-                    Congratulations!
+                    Welcome!
                   </Box>
                   <Box fontSize="heading-l"  color="inherit">
-                  You've deployed your first Amplify Application!
+                  This web app is hosted on AWS Amplify, and was created to demonstrate the ability to embed QuickSight Dashbaords
                   </Box>
                 </div>
               </Box>
