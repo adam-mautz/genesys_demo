@@ -29,7 +29,7 @@ import { ExternalLinkItem } from '../../common/common-components-config';
 
 
 // Import images
-import awsLogo from '../../public/images/bloom.svg';
+import awsLogo from '../../public/images/Bloom_Logo.png';
 
 const Home = () => {
   return (
