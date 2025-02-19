@@ -128,7 +128,7 @@ const Content = () => {
               <img
                 src={awsLogo}
                 alt=""
-                style={{ maxWidth: '18rem', paddingRight: '2em', backgroundColor: 'white', borderTopRightRadius: '20px', borderBottomLeftRadius: '5px', outline: '#3dae2b 1px solid' }}
+                style={{ maxWidth: '18rem', paddingRight: '2em', backgroundColor: 'white', borderTopRightRadius: '20px', borderBottomLeftRadius: '5px', outline: '#5790E5 1px solid' }}
               />
                 <Box margin={{ bottom: 's' }} />
                 <div className="custom-home__header-title">
