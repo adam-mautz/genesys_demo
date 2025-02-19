@@ -17,8 +17,6 @@
     "@cloudscape-design/collection-hooks": "^1.0.7",
     "@cloudscape-design/components-themeable": "^3.0.280",
     "@cloudscape-design/components-themed": "./src/assets/themed/components",
-    "@cloudscape-design/components": "^3.0.254",
-    "@cloudscape-design/design-tokens": "^3.0.1",
     "@cloudscape-design/design-tokens-themed": "./src/assets/themed/design-tokens",
     "@cloudscape-design/global-styles": "^1.0.8",
     "@cloudscape-design/test-utils-core": "^1.0.1",
